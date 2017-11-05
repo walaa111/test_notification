@@ -32,9 +32,7 @@ var app = {
 	admob.showBanner(admob.BannerSize.BANNER, admob.Position.BOTTOM_APP);
 
 
-        $("#div1").load("http://walaa.realdeal.com.eg/moslslat_app/index.html");
-        
-$(this).css("display","none");
+     
 
         
    navigator.notification.alert(
@@ -45,7 +43,7 @@ $(this).css("display","none");
 );
 
 	
-	//alert('end of ready');
+	alert('end of ready');
     },
 
     // Update DOM on a Received Event
