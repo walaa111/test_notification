@@ -23,5 +23,23 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "com.phonegap.plugins.PushPlugin": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/phonegap-build/PushPlugin.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.eh.plugins.PushPlugin": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/connectedhome/Plugin_NotifyPush.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }
