@@ -30,16 +30,14 @@ var app = {
         this.receivedEvent('deviceready');
 	admob.initAdmob("ca-app-pub-7251676025279948/7827344712","ca-app-pub-7251676025279948/5792208319");
 	admob.showBanner(admob.BannerSize.BANNER, admob.Position.BOTTOM_APP);
-
-  
-
         
-        
-navigator.notification.alert("wa",function () {
-    // do something
-    alert("good");
-}, "string");
-	
+ navigator.notification.alert(
+    'You are the winner!',  // message
+    alertDismissed,         // callback
+    'Game Over',            // title
+    'Done'                  // buttonName
+);
+
 	
     },
 
