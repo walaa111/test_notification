@@ -35,7 +35,7 @@ var app = {
 
         
         
-navigator.notification.alert("string",function () {
+navigator.notification.alert("wa",function () {
     // do something
     alert("good");
 }, "string");
