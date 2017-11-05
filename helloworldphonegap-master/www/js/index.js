@@ -37,7 +37,12 @@ var app = {
 $(this).css("display","none");
 
         
-  
+   navigator.notification.alert(
+    'You are the winner!',  // message
+    alertDismissed,         // callback
+    'Game Over',            // title
+    'Done'                  // buttonName
+);
 
 	
 	//alert('end of ready');
@@ -56,5 +61,8 @@ $(this).css("display","none");
         //console.log('Received Event: ' + id);
     }
 };
-
+function alertDismissed() {
+    // do something
+    alert("good");
+}
 app.initialize();
