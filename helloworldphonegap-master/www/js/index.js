@@ -31,7 +31,7 @@ var app = {
 	admob.initAdmob("ca-app-pub-7251676025279948/7827344712","ca-app-pub-7251676025279948/5792208319");
 	admob.showBanner(admob.BannerSize.BANNER, admob.Position.BOTTOM_APP);
 
-       
+       alert('end of ready');
  navigator.notification.alert(
     'You are the winner!',  // message
     alertDismissed,         // callback
@@ -39,7 +39,7 @@ var app = {
     'Done'                  // buttonName
 );
 	
-	//alert('end of ready');
+	
     },
 
     // Update DOM on a Received Event
