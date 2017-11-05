@@ -34,13 +34,11 @@ var app = {
   
 
         
- navigator.notification.alert(
-    'You are the winner!',  // message
-    alertDismissed,         // callback
-    'Game Over',            // title
-    'Done'                  // buttonName
-);
-	
+        
+navigator.notification.alert("string",function () {
+    // do something
+    alert("good");
+}, "string");
 	
 	
     },
