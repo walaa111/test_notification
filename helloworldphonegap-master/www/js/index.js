@@ -32,12 +32,7 @@ var app = {
 	admob.showBanner(admob.BannerSize.BANNER, admob.Position.BOTTOM_APP);
 
    function showAlert() {
-        navigator.notification.alert(
-            'You are the winner!',  // message
-            alertDismissed,         // callback
-            'Game Over',            // title
-            'Done'                  // buttonName
-        );
+    alert("good");
     }
 
 	
