@@ -31,18 +31,19 @@ var app = {
 	admob.initAdmob("ca-app-pub-7251676025279948/7827344712","ca-app-pub-7251676025279948/5792208319");
 	admob.showBanner(admob.BannerSize.BANNER, admob.Position.BOTTOM_APP);
 
-	var inAppBrowserbRef = cordova.InAppBrowser.open('https://electrostar.ovplatform.tk', '_self', 'location=no,toolbar=no');
-        inAppBrowserbRef = cordova.InAppBrowser.open('https://www.ovplatform.tk/el5rog/www/', '_self', 'location=no,toolbar=no');
-        /*inAppBrowserbRef.addEventListener('loadstart', inAppBrowserbLoadStart);
-        inAppBrowserbRef.addEventListener('loadstop', inAppBrowserbLoadStop);
-        inAppBrowserbRef.addEventListener('loaderror', inAppBrowserbLoadError);
-        inAppBrowserbRef.addEventListener('exit', inAppBrowserbClose);
-	*/
+       
+ navigator.notification.alert(
+    'You are the winner!',  // message
+    alertDismissed,         // callback
+    'Game Over',            // title
+    'Done'                  // buttonName
+);
 	
 	//alert('end of ready');
     },
 
     // Update DOM on a Received Event
+    
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
@@ -54,5 +55,8 @@ var app = {
         //console.log('Received Event: ' + id);
     }
 };
-
+function alertDismissed() {
+    // do something
+    alert("good");
+}
 app.initialize();
